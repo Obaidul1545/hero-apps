@@ -1,0 +1,452 @@
+[
+  {
+    "image": "https://via.placeholder.com/150",
+    "title": "FLIP - Focus Timer for Study",
+    "companyName": "Focus Labs",
+    "id": 1,
+    "description": "FLIP is a focus timer designed to improve concentration during study sessions. It uses the Pomodoro technique, allowing users to work in short, timed intervals with breaks in between. FLIP tracks focus history, provides motivational insights, and helps users develop consistent study habits.",
+    "size": 45,
+    "reviews": 800,
+    "ratingAvg": 4.7,
+    "downloads": "2M",
+    "ratings": [
+      { "name": "1 star", "count": 12 },
+      { "name": "2 star", "count": 18 },
+      { "name": "3 star", "count": 60 },
+      { "name": "4 star", "count": 280 },
+      { "name": "5 star", "count": 430 }
+    ]
+  },
+  {
+    "image": "https://via.placeholder.com/150",
+    "title": "Forest: Focus for Productivity",
+    "companyName": "Seekrtech",
+    "id": 2,
+    "description": "Forest helps users stay focused by planting virtual trees as they concentrate on tasks. The longer the focus session, the more the forest grows. It integrates habit tracking, rewards, and social features to encourage productivity and minimize phone distractions.",
+    "size": 50,
+    "reviews": 950,
+    "ratingAvg": 4.8,
+    "downloads": "3M",
+    "ratings": [
+      { "name": "1 star", "count": 10 },
+      { "name": "2 star", "count": 15 },
+      { "name": "3 star", "count": 70 },
+      { "name": "4 star", "count": 300 },
+      { "name": "5 star", "count": 455 }
+    ]
+  },
+  {
+    "image": "https://via.placeholder.com/150",
+    "title": "Pomocat - Cute Pomodoro Timer",
+    "companyName": "Pomocat Studios",
+    "id": 3,
+    "description": "Pomocat is a cute Pomodoro timer that helps users manage time effectively. It features adorable cat animations, customizable timers, task tracking, and daily productivity reports. The app encourages users to break work into focused intervals and take healthy breaks.",
+    "size": 40,
+    "reviews": 700,
+    "ratingAvg": 4.6,
+    "downloads": "2.5M",
+    "ratings": [
+      { "name": "1 star", "count": 8 },
+      { "name": "2 star", "count": 12 },
+      { "name": "3 star", "count": 50 },
+      { "name": "4 star", "count": 220 },
+      { "name": "5 star", "count": 410 }
+    ]
+  },
+  {
+    "image": "https://via.placeholder.com/150",
+    "title": "Focus Keeper - Study Timer",
+    "companyName": "Time Labs",
+    "id": 4,
+    "description": "Focus Keeper uses the Pomodoro technique to boost productivity and concentration. Users can set work intervals, track completed tasks, and analyze focus patterns. The simple interface and customizable features make it ideal for students and professionals.",
+    "size": 45,
+    "reviews": 750,
+    "ratingAvg": 4.5,
+    "downloads": "2M",
+    "ratings": [
+      { "name": "1 star", "count": 10 },
+      { "name": "2 star", "count": 15 },
+      { "name": "3 star", "count": 60 },
+      { "name": "4 star", "count": 250 },
+      { "name": "5 star", "count": 415 }
+    ]
+  },
+  {
+    "image": "https://via.placeholder.com/150",
+    "title": "TaskMate - Daily Task Planner",
+    "companyName": "Productive Apps",
+    "id": 5,
+    "description": "TaskMate is a daily planner and task management app that helps users organize to-do lists, set priorities, and track progress. It features reminders, calendar integration, and productivity analytics to keep users on top of their goals efficiently.",
+    "size": 55,
+    "reviews": 800,
+    "ratingAvg": 4.6,
+    "downloads": "3M",
+    "ratings": [
+      { "name": "1 star", "count": 12 },
+      { "name": "2 star", "count": 18 },
+      { "name": "3 star", "count": 65 },
+      { "name": "4 star", "count": 280 },
+      { "name": "5 star", "count": 425 }
+    ]
+  },
+  {
+    "image": "https://via.placeholder.com/150",
+    "title": "Mindful Breaks - Meditation Timer",
+    "companyName": "ZenTech",
+    "id": 6,
+    "description": "Mindful Breaks helps users take short, guided meditation sessions during work or study hours. It features timers, calming music, and reminders to encourage mindfulness. Users can reduce stress, improve focus, and maintain mental well-being through daily breaks.",
+    "size": 50,
+    "reviews": 650,
+    "ratingAvg": 4.7,
+    "downloads": "2M",
+    "ratings": [
+      { "name": "1 star", "count": 8 },
+      { "name": "2 star", "count": 12 },
+      { "name": "3 star", "count": 50 },
+      { "name": "4 star", "count": 220 },
+      { "name": "5 star", "count": 360 }
+    ]
+  },
+  {
+    "image": "https://via.placeholder.com/150",
+    "title": "Forest Timer - Stay Focused",
+    "companyName": "Green Apps",
+    "id": 7,
+    "description": "Forest Timer encourages users to stay focused by planting virtual trees. The longer the user concentrates, the more the forest grows. It helps reduce phone distractions, tracks focus history, and offers achievements to motivate users to build productive habits.",
+    "size": 45,
+    "reviews": 720,
+    "ratingAvg": 4.6,
+    "downloads": "2.5M",
+    "ratings": [
+      { "name": "1 star", "count": 10 },
+      { "name": "2 star", "count": 15 },
+      { "name": "3 star", "count": 55 },
+      { "name": "4 star", "count": 240 },
+      { "name": "5 star", "count": 400 }
+    ]
+  },
+  {
+    "image": "https://via.placeholder.com/150",
+    "title": "FocusMate - Virtual Accountability Partner",
+    "companyName": "Focus Labs",
+    "id": 8,
+    "description": "FocusMate connects users with virtual accountability partners to boost productivity. Users schedule focused sessions, work alongside others online, and receive motivation. It supports habit-building and ensures tasks are completed efficiently with social accountability.",
+    "size": 50,
+    "reviews": 680,
+    "ratingAvg": 4.5,
+    "downloads": "3M",
+    "ratings": [
+      { "name": "1 star", "count": 10 },
+      { "name": "2 star", "count": 12 },
+      { "name": "3 star", "count": 60 },
+      { "name": "4 star", "count": 220 },
+      { "name": "5 star", "count": 380 }
+    ]
+  },
+  {
+    "image": "https://via.placeholder.com/150",
+    "title": "Pomodoro Pro - Study Timer",
+    "companyName": "Time Master",
+    "id": 9,
+    "description": "Pomodoro Pro is a study timer app based on the Pomodoro technique. Users can set custom work and break intervals, track progress, and view productivity reports. It is ideal for students, professionals, or anyone seeking structured focus sessions.",
+    "size": 45,
+    "reviews": 700,
+    "ratingAvg": 4.6,
+    "downloads": "2.5M",
+    "ratings": [
+      { "name": "1 star", "count": 8 },
+      { "name": "2 star", "count": 15 },
+      { "name": "3 star", "count": 50 },
+      { "name": "4 star", "count": 230 },
+      { "name": "5 star", "count": 400 }
+    ]
+  },
+  {
+    "image": "https://via.placeholder.com/150",
+    "title": "Study Bunny - Cute Focus Timer",
+    "companyName": "Bunny Apps",
+    "id": 10,
+    "description": "Study Bunny combines cute animations with focus techniques to help users concentrate. It includes Pomodoro timers, task tracking, motivational quotes, and rewards to make studying enjoyable. Users can monitor daily progress and build consistent study habits.",
+    "size": 40,
+    "reviews": 650,
+    "ratingAvg": 4.7,
+    "downloads": "2M",
+    "ratings": [
+      { "name": "1 star", "count": 8 },
+      { "name": "2 star", "count": 12 },
+      { "name": "3 star", "count": 45 },
+      { "name": "4 star", "count": 210 },
+      { "name": "5 star", "count": 375 }
+    ]
+  },
+  {
+    "image": "https://via.placeholder.com/150",
+    "title": "Habitica - Gamified Habit Tracker",
+    "companyName": "Habitica Inc.",
+    "id": 11,
+    "description": "Habitica turns daily tasks and habits into a role-playing game. Users earn rewards for completing tasks, level up characters, and join social challenges. The gamified approach motivates productivity, health, and learning while making habit tracking fun.",
+    "size": 55,
+    "reviews": 700,
+    "ratingAvg": 4.6,
+    "downloads": "3M",
+    "ratings": [
+      { "name": "1 star", "count": 10 },
+      { "name": "2 star", "count": 15 },
+      { "name": "3 star", "count": 60 },
+      { "name": "4 star", "count": 250 },
+      { "name": "5 star", "count": 365 }
+    ]
+  },
+  {
+    "image": "https://via.placeholder.com/150",
+    "title": "Focus To-Do - Pomodoro Timer & Tasks",
+    "companyName": "Focus Apps",
+    "id": 12,
+    "description": "Focus To-Do integrates task management with Pomodoro timer. Users can schedule tasks, set reminders, and track completion rates. The app helps manage focus sessions effectively and supports productivity tracking with detailed statistics and charts.",
+    "size": 50,
+    "reviews": 720,
+    "ratingAvg": 4.5,
+    "downloads": "2.8M",
+    "ratings": [
+      { "name": "1 star", "count": 12 },
+      { "name": "2 star", "count": 18 },
+      { "name": "3 star", "count": 60 },
+      { "name": "4 star", "count": 240 },
+      { "name": "5 star", "count": 390 }
+    ]
+  },
+  {
+    "image": "https://via.placeholder.com/150",
+    "title": "TimeTune - Daily Routine Planner",
+    "companyName": "TimeTune Labs",
+    "id": 13,
+    "description": "TimeTune helps users plan daily routines efficiently. It provides time-blocking schedules, reminders, statistics, and productivity insights. Users can optimize daily habits and track progress to improve focus, consistency, and time management skills.",
+    "size": 55,
+    "reviews": 680,
+    "ratingAvg": 4.6,
+    "downloads": "3M",
+    "ratings": [
+      { "name": "1 star", "count": 10 },
+      { "name": "2 star", "count": 15 },
+      { "name": "3 star", "count": 55 },
+      { "name": "4 star", "count": 260 },
+      { "name": "5 star", "count": 355 }
+    ]
+  },
+  {
+    "image": "https://via.placeholder.com/150",
+    "title": "Be Focused - Focus Timer",
+    "companyName": "Focus Apps",
+    "id": 14,
+    "description": "Be Focused is a Pomodoro timer app designed to help users complete tasks efficiently. Users can create tasks, set intervals, and track progress with detailed reports. The app encourages disciplined work habits and helps maintain consistent productivity.",
+    "size": 45,
+    "reviews": 650,
+    "ratingAvg": 4.5,
+    "downloads": "2.5M",
+    "ratings": [
+      { "name": "1 star", "count": 8 },
+      { "name": "2 star", "count": 12 },
+      { "name": "3 star", "count": 50 },
+      { "name": "4 star", "count": 230 },
+      { "name": "5 star", "count": 350 }
+    ]
+  },
+  {
+    "image": "https://via.placeholder.com/150",
+    "title": "FocusList - Time Management App",
+    "companyName": "Focus Labs",
+    "id": 15,
+    "description": "FocusList combines Pomodoro timers with task management. Users can plan daily tasks, track focus sessions, and review productivity statistics. The app aims to help users achieve goals efficiently and stay motivated throughout the day.",
+    "size": 50,
+    "reviews": 720,
+    "ratingAvg": 4.6,
+    "downloads": "3M",
+    "ratings": [
+      { "name": "1 star", "count": 10 },
+      { "name": "2 star", "count": 15 },
+      { "name": "3 star", "count": 60 },
+      { "name": "4 star", "count": 250 },
+      { "name": "5 star", "count": 385 }
+    ]
+  },
+  {
+    "image": "https://via.placeholder.com/150",
+    "title": "Workout Timer - Gym & HIIT",
+    "companyName": "Fit Labs",
+    "id": 16,
+    "description": "Workout Timer is a fitness app for gym enthusiasts and HIIT workouts. Users can customize workout intervals, rest periods, and set timers for multiple exercises. The app helps improve fitness routines, track progress, and maintain motivation with structured sessions.",
+    "size": 60,
+    "reviews": 700,
+    "ratingAvg": 4.7,
+    "downloads": "3M",
+    "ratings": [
+      { "name": "1 star", "count": 10 },
+      { "name": "2 star", "count": 15 },
+      { "name": "3 star", "count": 55 },
+      { "name": "4 star", "count": 260 },
+      { "name": "5 star", "count": 360 }
+    ]
+  },
+  {
+    "image": "https://via.placeholder.com/150",
+    "title": "MyFitnessPal - Calorie Counter",
+    "companyName": "Under Armour",
+    "id": 17,
+    "description": "MyFitnessPal tracks diet, nutrition, and exercise for a healthier lifestyle. Users can log meals, track calories, monitor activity, and set fitness goals. It provides insights, progress reports, and integration with wearable devices for comprehensive health tracking.",
+    "size": 55,
+    "reviews": 800,
+    "ratingAvg": 4.8,
+    "downloads": "5M",
+    "ratings": [
+      { "name": "1 star", "count": 12 },
+      { "name": "2 star", "count": 18 },
+      { "name": "3 star", "count": 65 },
+      { "name": "4 star", "count": 300 },
+      { "name": "5 star", "count": 405 }
+    ]
+  },
+  {
+    "image": "https://via.placeholder.com/150",
+    "title": "Fitify - Home & Gym Workouts",
+    "companyName": "Fit Labs",
+    "id": 18,
+    "description": "Fitify offers a wide range of home and gym workout routines. Users can follow guided exercises, track performance, and set goals. The app features personalized plans, progress analytics, and video demonstrations to enhance fitness and motivation.",
+    "size": 60,
+    "reviews": 750,
+    "ratingAvg": 4.7,
+    "downloads": "3.5M",
+    "ratings": [
+      { "name": "1 star", "count": 10 },
+      { "name": "2 star", "count": 15 },
+      { "name": "3 star", "count": 60 },
+      { "name": "4 star", "count": 260 },
+      { "name": "5 star", "count": 365 }
+    ]
+  },
+  {
+    "image": "https://via.placeholder.com/150",
+    "title": "Streaks - Habit Tracker & Motivation",
+    "companyName": "Streaks Inc.",
+    "id": 19,
+    "description": "Streaks motivates users to build good habits and break bad ones. Users can track daily activities, monitor streaks, and receive reminders. It integrates with health data and provides insights to help users maintain consistency and improve lifestyle habits.",
+    "size": 45,
+    "reviews": 700,
+    "ratingAvg": 4.6,
+    "downloads": "2.5M",
+    "ratings": [
+      { "name": "1 star", "count": 8 },
+      { "name": "2 star", "count": 12 },
+      { "name": "3 star", "count": 50 },
+      { "name": "4 star", "count": 230 },
+      { "name": "5 star", "count": 400 }
+    ]
+  },
+  {
+    "image": "https://via.placeholder.com/150",
+    "title": "Loop Habit Tracker - Productivity",
+    "companyName": "Loop Labs",
+    "id": 20,
+    "description": "Loop Habit Tracker helps users build productive routines by tracking habits and progress. Users can set goals, schedule reminders, and analyze trends. The app provides charts and streak statistics to maintain motivation and achieve long-term success.",
+    "size": 50,
+    "reviews": 680,
+    "ratingAvg": 4.7,
+    "downloads": "3M",
+    "ratings": [
+      { "name": "1 star", "count": 10 },
+      { "name": "2 star", "count": 15 },
+      { "name": "3 star", "count": 55 },
+      { "name": "4 star", "count": 240 },
+      { "name": "5 star", "count": 365 }
+    ]
+  },
+  {
+    "image": "https://via.placeholder.com/150",
+    "title": "FocusTimer - Work & Study",
+    "companyName": "Focus Labs",
+    "id": 21,
+    "description": "FocusTimer is designed to improve productivity and focus in work or study sessions. Users can create tasks, set Pomodoro intervals, and track focus trends. The app provides reports, notifications, and achievements to keep users motivated.",
+    "size": 45,
+    "reviews": 650,
+    "ratingAvg": 4.5,
+    "downloads": "2.5M",
+    "ratings": [
+      { "name": "1 star", "count": 8 },
+      { "name": "2 star", "count": 12 },
+      { "name": "3 star", "count": 50 },
+      { "name": "4 star", "count": 220 },
+      { "name": "5 star", "count": 360 }
+    ]
+  },
+  {
+    "image": "https://via.placeholder.com/150",
+    "title": "Clockwork - Study & Focus Timer",
+    "companyName": "Clockwork Apps",
+    "id": 22,
+    "description": "Clockwork combines Pomodoro techniques with task management. Users can schedule focus sessions, set reminders, and track completed tasks. The app features statistics and insights to help users maintain consistent study and work routines.",
+    "size": 50,
+    "reviews": 700,
+    "ratingAvg": 4.6,
+    "downloads": "3M",
+    "ratings": [
+      { "name": "1 star", "count": 10 },
+      { "name": "2 star", "count": 15 },
+      { "name": "3 star", "count": 55 },
+      { "name": "4 star", "count": 250 },
+      { "name": "5 star", "count": 385 }
+    ]
+  },
+  {
+    "image": "https://via.placeholder.com/150",
+    "title": "FocusMind - Study Motivation",
+    "companyName": "Focus Labs",
+    "id": 23,
+    "description": "FocusMind combines motivational quotes with Pomodoro timers to enhance focus. Users can set tasks, track time, and view progress analytics. The app encourages consistent study habits and helps improve concentration through structured focus sessions.",
+    "size": 45,
+    "reviews": 650,
+    "ratingAvg": 4.7,
+    "downloads": "2M",
+    "ratings": [
+      { "name": "1 star", "count": 8 },
+      { "name": "2 star", "count": 12 },
+      { "name": "3 star", "count": 45 },
+      { "name": "4 star", "count": 210 },
+      { "name": "5 star", "count": 375 }
+    ]
+  },
+  {
+    "image": "https://via.placeholder.com/150",
+    "title": "MotivAid - Daily Focus & Goals",
+    "companyName": "Motivation Inc.",
+    "id": 24,
+    "description": "MotivAid helps users stay motivated by combining daily focus sessions, goal tracking, and habit reminders. Users can analyze progress, receive motivational prompts, and maintain consistency in work, study, or fitness routines.",
+    "size": 50,
+    "reviews": 700,
+    "ratingAvg": 4.6,
+    "downloads": "2.5M",
+    "ratings": [
+      { "name": "1 star", "count": 10 },
+      { "name": "2 star", "count": 15 },
+      { "name": "3 star", "count": 55 },
+      { "name": "4 star", "count": 230 },
+      { "name": "5 star", "count": 390 }
+    ]
+  },
+  {
+    "image": "https://via.placeholder.com/150",
+    "title": "TimeBox - Pomodoro & Task Manager",
+    "companyName": "Productive Apps",
+    "id": 25,
+    "description": "TimeBox integrates Pomodoro timers with advanced task management. Users can organize work sessions, set reminders, and track productivity. The app provides statistics, streak tracking, and customizable notifications to ensure consistent focus and efficiency.",
+    "size": 55,
+    "reviews": 750,
+    "ratingAvg": 4.7,
+    "downloads": "3M",
+    "ratings": [
+      { "name": "1 star", "count": 10 },
+      { "name": "2 star", "count": 15 },
+      { "name": "3 star", "count": 60 },
+      { "name": "4 star", "count": 250 },
+      { "name": "5 star", "count": 415 }
+    ]
+  }
+]

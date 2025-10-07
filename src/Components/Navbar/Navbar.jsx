@@ -1,14 +1,15 @@
 import { Github } from 'lucide-react';
-import { NavLink } from 'react-router';
+import { Link, NavLink } from 'react-router';
+import Logo from '../../assets/logo.png';
 
 const Navbar = () => {
   const links = (
     <>
-      <div className="flex gap-5">
+      <div className="flex gap-5 font-semibold">
         <NavLink to={'/'}>
           <li>Home</li>
         </NavLink>
-        <NavLink NavLink to={'/apps'}>
+        <NavLink to={'/apps'}>
           <li>Apps</li>
         </NavLink>
         <NavLink to={'/installation'}>
@@ -20,7 +21,7 @@ const Navbar = () => {
   return (
     <div className="navbar bg-base-100 shadow-sm">
       <div className="navbar-start">
-        <div className="dropdown">
+        <div className="dropdown mr-2">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -45,15 +46,27 @@ const Navbar = () => {
             {links}
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">daisyUI</a>
+        <Link
+          to={'/'}
+          className="inline-flex items-center gap-2 text-xl font-semibold "
+        >
+          <img src={Logo} alt="" className="w-10" />{' '}
+          <span className="bg-gradient-to-br from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent">
+            Hero Apps
+          </span>
+        </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{links}</ul>
       </div>
       <div className="navbar-end">
-        <a className="btn">
+        <Link
+          to={'https://github.com/Obaidul1545/hero-apps'}
+          target="blank"
+          className="btn text-white bg-gradient-to-br from-[#632EE3] to-[#9F62F2]"
+        >
           <Github /> Contribute
-        </a>
+        </Link>
       </div>
     </div>
   );
