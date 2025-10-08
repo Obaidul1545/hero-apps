@@ -1,11 +1,12 @@
-import React from 'react';
 import imag from '../../assets/demo-1.webp';
 import { Download, Star } from 'lucide-react';
+import { Link } from 'react-router';
 
-const TrendingApps = ({ app }) => {
-  const { title, ratingAvg, image, downloads } = app;
+const AppCard = ({ app }) => {
+  const { title, ratingAvg, image, downloads, id } = app;
+
   return (
-    <div>
+    <Link to={`/appDetails/${id}`}>
       <div className=" bg-base-100 rounded-lg shadow-sm p-4 hover:scale-105 transition ease-in-out">
         <figure className="">
           <img src={imag} alt="" className="w-full object-cover rounded-lg" />
@@ -26,8 +27,8 @@ const TrendingApps = ({ app }) => {
           </div>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 
-export default TrendingApps;
+export default AppCard;

@@ -13,7 +13,6 @@ const useAppsData = () => {
       .catch((err) => setError(err))
       .finally(() => setLoading(false));
   }, []);
-  console.log(appData);
 
   return { appData, loading, error };
 };

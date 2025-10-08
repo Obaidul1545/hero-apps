@@ -1,10 +1,10 @@
 import React from 'react';
 import useAppsData from '../../Hooks/useAppsData';
-import TrendingApps from '../../Components/trendingApps/TrendingApps';
 import { Link } from 'react-router';
 import googlePlay from '../../assets/googlePlay.png';
 import appPlay from '../../assets/appStore.png';
 import heroPng from '../../assets/hero.png';
+import AppCard from '../../Components/AppCard/AppCard';
 
 const Home = () => {
   const { appData, loading, error } = useAppsData();
@@ -80,7 +80,7 @@ const Home = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5 my-8 ">
           {trendingApps.map((app) => (
-            <TrendingApps key={app.id} app={app}></TrendingApps>
+            <AppCard key={app.id} app={app}></AppCard>
           ))}
         </div>
         <div className="flex justify-center">

@@ -1,9 +1,9 @@
-import React from 'react';
+import AppCard from '../../Components/AppCard/AppCard';
 import useAppsData from '../../Hooks/useAppsData';
-import TrendingApps from '../../Components/trendingApps/TrendingApps';
 
 const Apps = () => {
   const { appData } = useAppsData();
+
   return (
     <div>
       <div className="text-center space-y-2 my-10 max-w-7xl mx-auto">
@@ -47,7 +47,7 @@ const Apps = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5 my-4">
           {appData.map((app) => (
-            <TrendingApps key={app.id} app={app}></TrendingApps>
+            <AppCard key={app.id} app={app}></AppCard>
           ))}
         </div>
       </section>
