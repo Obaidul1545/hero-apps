@@ -14,6 +14,7 @@ import {
   CartesianGrid,
   ResponsiveContainer,
 } from 'recharts';
+import { addToStoreDB } from '../../utility/addToDB';
 
 const AppDetails = () => {
   const { id } = useParams();
@@ -32,15 +33,6 @@ const AppDetails = () => {
     size,
   } = app || {};
   const ratingReverse = ratings ? [...ratings].reverse() : [];
-  console.log(ratingReverse);
-
-  // "ratings": [
-  //     { "name": "1 star", "count": 10 },
-  //     { "name": "2 star", "count": 15 },
-  //     { "name": "3 star", "count": 60 },
-  //     { "name": "4 star", "count": 250 },
-  //     { "name": "5 star", "count": 415 }
-  //   ]
 
   return (
     <div className="max-w-7xl mx-auto my-12">
@@ -78,7 +70,10 @@ const AppDetails = () => {
               <h3 className="text-[#001931] text-4xl font-bold">{reviews}</h3>
             </div>
           </div>
-          <button className="btn bg-[#00D390] text-white mt-8">
+          <button
+            onClick={() => addToStoreDB(id)}
+            className="btn bg-[#00D390] text-white mt-8"
+          >
             Install Now ({size}MB){' '}
           </button>
         </div>
@@ -111,7 +106,9 @@ const AppDetails = () => {
 
       <div>
         <h3 className="text-2xl text-[#001931] font-semibold">Description </h3>
-        <p>{description}</p>
+        <p className="text-[#627382] text-justify mt-5 px-1 md:px-0">
+          {description}
+        </p>
       </div>
     </div>
   );

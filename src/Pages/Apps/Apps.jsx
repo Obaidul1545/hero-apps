@@ -1,8 +1,10 @@
+import { useState } from 'react';
 import AppCard from '../../Components/AppCard/AppCard';
 import useAppsData from '../../Hooks/useAppsData';
 
 const Apps = () => {
   const { appData } = useAppsData();
+  const [search, setSearch] = useState();
 
   return (
     <div>
@@ -17,7 +19,7 @@ const Apps = () => {
 
       <section className="max-w-7xl mx-auto">
         <div className="flex justify-between items-center my-2">
-          <h3>(25) Apps Found</h3>
+          <h3>({appData.length}) Apps Found</h3>
           <div>
             <label className="input">
               <svg
@@ -37,6 +39,8 @@ const Apps = () => {
                 </g>
               </svg>
               <input
+                value={search}
+                onChange={(e) => setSearch(e.target.value)}
                 type="search"
                 className="grow outline-none"
                 placeholder="Search Apps"
