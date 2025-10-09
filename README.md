@@ -32,4 +32,4 @@
 - **React Spinners**
 - **Vite**
 
-## Live link:
+## Live link: https://get-hero-apps.netlify.app/
