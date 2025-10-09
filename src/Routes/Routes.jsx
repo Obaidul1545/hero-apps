@@ -22,12 +22,13 @@ const router = createBrowserRouter([
         Component: Apps,
       },
       {
-        path: '/installation',
-        Component: Installation,
+        path: '/appDetails/:id',
+        errorElement: <PageNotFound></PageNotFound>,
+        Component: AppDetails,
       },
       {
-        path: '/appDetails/:id',
-        Component: AppDetails,
+        path: '/installation',
+        Component: Installation,
       },
     ],
   },

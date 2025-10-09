@@ -1,13 +1,27 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import AppCard from '../../Components/AppCard/AppCard';
 import useAppsData from '../../Hooks/useAppsData';
 import AppNotFound from '../../Components/AppNotFound/AppNotFound';
+import AppListSkeletonLoader from '../../Components/AppListSkeletonLoader/AppListSkeletonLoader';
 
 const Apps = () => {
-  const { appData } = useAppsData();
+  const { appData, loading } = useAppsData();
   const [search, setSearch] = useState('');
-  const valueTrim = search.trim().toLocaleLowerCase();
+  const [isSearching, setIsSearching] = useState(false);
 
+  useEffect(() => {
+    if (!search.trim()) {
+      setIsSearching(false);
+      return;
+    }
+    setIsSearching(true);
+    const timer = setTimeout(() => {
+      setIsSearching(false);
+    }, 500);
+    return () => clearTimeout(timer);
+  }, [search]);
+
+  const valueTrim = search.trim().toLocaleLowerCase();
   const searchApps = valueTrim
     ? appData.filter((app) => app.title.toLocaleLowerCase().includes(valueTrim))
     : appData;
@@ -55,7 +69,9 @@ const Apps = () => {
           </div>
         </div>
 
-        {searchApps.length === 0 ? (
+        {loading || isSearching ? (
+          <AppListSkeletonLoader count="25" />
+        ) : searchApps.length === 0 ? (
           <AppNotFound></AppNotFound>
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5 mt-5 mb-20">
