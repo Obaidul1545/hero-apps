@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import useAppsData from '../../Hooks/useAppsData';
-import { getStoredApp } from '../../utility/addToDB';
+import { getStoredApp, removeToStoredDB } from '../../utility/addToDB';
 import InstallAppCard from '../../Components/InstallAppCard/InstallAppCard';
 
 const Installation = () => {
@@ -17,14 +17,23 @@ const Installation = () => {
     setInstalledApp(myInstalledApps);
   }, [appData]);
 
+  // sorted by size functionality
   const handleSort = (type) => {
     setSort(type);
     if (type === 'low-high') {
       const sortedByLowHigh = [...installedApp].sort((a, b) => a.size - b.size);
       setInstalledApp(sortedByLowHigh);
     }
-    // if (type === 'high-low') {
-    // }
+    if (type === 'high-low') {
+      const sortedByHighLow = [...installedApp].sort((a, b) => b.size - a.size);
+      setInstalledApp(sortedByHighLow);
+    }
+  };
+
+  // Uninstall functionality
+  const handleUninstall = (id) => {
+    removeToStoredDB(id);
+    setInstalledApp((prev) => prev.filter((p) => p.id !== id));
   };
 
   return (
@@ -67,6 +76,7 @@ const Installation = () => {
             <InstallAppCard
               key={appsData.id}
               appsData={appsData}
+              handleUninstall={handleUninstall}
             ></InstallAppCard>
           ))}
         </div>

@@ -1,3 +1,4 @@
+// get localStorage
 const getStoredApp = () => {
   const storedAppSTR = localStorage.getItem('installedApps');
 
@@ -9,6 +10,7 @@ const getStoredApp = () => {
   }
 };
 
+// save localStorage
 const addToStoreDB = (id) => {
   const storedAppData = getStoredApp();
 
@@ -21,4 +23,13 @@ const addToStoreDB = (id) => {
   }
 };
 
-export { addToStoreDB, getStoredApp };
+// delete localStorage
+const removeToStoredDB = (id) => {
+  console.log(id);
+  const storeApps = getStoredApp().map((a) => parseInt(a));
+  const updateStoreApps = storeApps.filter((apps) => apps !== id);
+  console.log(updateStoreApps);
+  localStorage.setItem('installedApps', JSON.stringify(updateStoreApps));
+};
+
+export { addToStoreDB, getStoredApp, removeToStoredDB };

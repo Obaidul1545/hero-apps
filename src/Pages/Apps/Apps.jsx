@@ -7,7 +7,7 @@ const Apps = () => {
   const { appData } = useAppsData();
   const [search, setSearch] = useState('');
   const valueTrim = search.trim().toLocaleLowerCase();
-  console.log(valueTrim);
+
   const searchApps = valueTrim
     ? appData.filter((app) => app.title.toLocaleLowerCase().includes(valueTrim))
     : appData;
