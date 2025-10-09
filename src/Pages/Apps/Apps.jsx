@@ -1,10 +1,16 @@
 import { useState } from 'react';
 import AppCard from '../../Components/AppCard/AppCard';
 import useAppsData from '../../Hooks/useAppsData';
+import AppNotFound from '../../Components/AppNotFound/AppNotFound';
 
 const Apps = () => {
   const { appData } = useAppsData();
-  const [search, setSearch] = useState();
+  const [search, setSearch] = useState('');
+  const valueTrim = search.trim().toLocaleLowerCase();
+  console.log(valueTrim);
+  const searchApps = valueTrim
+    ? appData.filter((app) => app.title.toLocaleLowerCase().includes(valueTrim))
+    : appData;
 
   return (
     <div>
@@ -19,7 +25,7 @@ const Apps = () => {
 
       <section className="max-w-7xl mx-auto">
         <div className="flex justify-between items-center my-2">
-          <h3>({appData.length}) Apps Found</h3>
+          <h3>({searchApps.length}) Apps Found</h3>
           <div>
             <label className="input">
               <svg
@@ -49,11 +55,15 @@ const Apps = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5 my-4">
-          {appData.map((app) => (
-            <AppCard key={app.id} app={app}></AppCard>
-          ))}
-        </div>
+        {searchApps.length === 0 ? (
+          <AppNotFound></AppNotFound>
+        ) : (
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5 mt-5 mb-20">
+            {searchApps.map((app) => (
+              <AppCard key={app.id} app={app}></AppCard>
+            ))}
+          </div>
+        )}
       </section>
     </div>
   );

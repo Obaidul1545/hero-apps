@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router';
 const AppNotFound = () => {
   const navigete = useNavigate();
   return (
-    <div className="text-center space-y-4 my-20 ">
+    <div className="text-center space-y-4 mb-20 ">
       <img src={NotFoundImg} alt="" className="mx-auto" />
       <h1 className="text-5xl font-bold text-[#001931]">
         OPPS!! APP NOT FOUND

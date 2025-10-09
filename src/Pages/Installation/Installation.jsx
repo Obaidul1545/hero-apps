@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import useAppsData from '../../Hooks/useAppsData';
 import { getStoredApp } from '../../utility/addToDB';
-import AppNotFound from '../../Components/AppNotFound/AppNotFound';
-import PageNotFound from '../PageNotFound/PageNotFound';
+
+import img from '../../assets/demo-1.webp';
+import { Download, Star } from 'lucide-react';
 
 const Installation = () => {
   const [installedApp, setInstalledApp] = useState([]);
@@ -33,29 +34,51 @@ const Installation = () => {
         </p>
       </div>
 
-      <div className="flex justify-between items-center my-2">
-        <h3>({installedApp.length}) Apps Found</h3>
-        <div>
-          <div className="dropdown">
-            <div tabIndex={0} role="button" className="btn m-1">
-              Sort By Size
+      <section className="mb-20">
+        <div className="flex justify-between items-center my-2">
+          <h3>({installedApp.length}) Apps Found</h3>
+          <div>
+            <div className="dropdown">
+              <div tabIndex={0} role="button" className="btn m-1">
+                Sort By Size
+              </div>
+              <ul
+                tabIndex={0}
+                className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm"
+              >
+                <li>
+                  <a>Low-High</a>
+                </li>
+                <li>
+                  <a>High-Low</a>
+                </li>
+              </ul>
             </div>
-            <ul
-              tabIndex={0}
-              className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm"
-            >
-              <li>
-                <a>Low-High</a>
-              </li>
-              <li>
-                <a>High-Low</a>
-              </li>
-            </ul>
           </div>
         </div>
-      </div>
 
-      <PageNotFound></PageNotFound>
+        {/* installed card  */}
+        <div className="flex items-center justify-between bg-white p-4 rounded-md shadow-md">
+          <div className="flex items-center gap-6">
+            <img src={img} alt="" className="w-20 rounded-md" />
+            <div className="space-y-3">
+              <h3 className="text-xl font-semibold text-[#001931]">
+                Lorem ipsum dolor sit amet.
+              </h3>
+              <div className="flex items-center gap-3">
+                <span className="text-[#00D390] inline-flex items-center gap-1">
+                  <Download size={20} /> 9M
+                </span>
+                <span className="text-[#FF8811] inline-flex items-center gap-1">
+                  <Star size={20} /> 5
+                </span>
+                <span className="text-[#627382]">250MB</span>
+              </div>
+            </div>
+          </div>
+          <button className="btn text-white bg-[#00D390]">Uninstall</button>
+        </div>
+      </section>
     </div>
   );
 };
