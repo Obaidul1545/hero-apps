@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import useAppsData from '../../Hooks/useAppsData';
 import { getStoredApp, removeToStoredDB } from '../../utility/addToDB';
 import InstallAppCard from '../../Components/InstallAppCard/InstallAppCard';
+import { toast } from 'react-toastify';
 
 const Installation = () => {
   const { appData } = useAppsData();
@@ -34,6 +35,7 @@ const Installation = () => {
   const handleUninstall = (id) => {
     removeToStoredDB(id);
     setInstalledApp((prev) => prev.filter((p) => p.id !== id));
+    toast.success('Uninstall Success!');
   };
 
   return (

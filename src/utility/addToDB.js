@@ -1,3 +1,5 @@
+import { toast } from 'react-toastify';
+
 // get localStorage
 const getStoredApp = () => {
   const storedAppSTR = localStorage.getItem('installedApps');
@@ -15,12 +17,13 @@ const addToStoreDB = (id) => {
   const storedAppData = getStoredApp();
 
   if (storedAppData.includes(id)) {
-    alert('Already exsist');
+    return toast.warning('Already Installed!');
   } else {
     storedAppData.push(id);
     const data = JSON.stringify(storedAppData);
     localStorage.setItem('installedApps', data);
   }
+  toast.success('Installed Success!');
 };
 
 // delete localStorage

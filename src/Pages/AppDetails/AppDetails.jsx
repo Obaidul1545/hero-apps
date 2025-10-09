@@ -3,7 +3,7 @@ import useAppsData from '../../Hooks/useAppsData';
 import downloadImg from '../../assets/icon-downloads.png';
 import ratingImg from '../../assets/icon-ratings.png';
 import reviewImg from '../../assets/icon-review.png';
-import img from '../../assets/demo-app(2).webp';
+
 import {
   BarChart,
   Bar,
@@ -13,10 +13,12 @@ import {
   ResponsiveContainer,
 } from 'recharts';
 import { addToStoreDB } from '../../utility/addToDB';
+import { useState } from 'react';
 
 const AppDetails = () => {
   const { id } = useParams();
   const { appData, loading } = useAppsData();
+  const [isInstalled, setIsInstalled] = useState(false);
 
   const app = appData.find((p) => p.id === Number(id));
   const {
@@ -69,10 +71,14 @@ const AppDetails = () => {
             </div>
           </div>
           <button
-            onClick={() => addToStoreDB(id)}
+            disabled={isInstalled}
+            onClick={() => {
+              addToStoreDB(id);
+              setIsInstalled(true);
+            }}
             className="btn bg-[#00D390] text-white mt-8"
           >
-            Install Now ({size}MB){' '}
+            {isInstalled ? 'Installed' : `Install Now ${size}MB`}
           </button>
         </div>
       </div>
