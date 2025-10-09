@@ -1,16 +1,28 @@
-# React + Vite
+# Hero Apps
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
 
-Currently, two official plugins are available:
+**Hero Apps** হলো একটি সম্পূর্ণ রেসপনসিভ React ভিত্তিক ওয়েব অ্যাপ্লিকেশন, যেখানে
+বিভিন্ন অ্যাপের তথ্য, রেটিং, রিভিউ এবং ডাউনলোড সংখ্যা প্রদর্শন করা হয়।  
+এই অ্যাপটি পুরোপুরি ডায়নামিক, যেখানে সার্চ, ইনস্টল/আনইনস্টল, লোকালস্টোরেজ
+ম্যানেজমেন্ট, চার্ট ভিজুয়ালাইজেশন এবং রাউট ন্যাভিগেশনের সময় লোডিং অ্যানিমেশন
+যুক্ত করা হয়েছে।
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+প্রজেক্টে নিম্নোক্ত ফিচারগুলো বাস্তবায়ন করা হয়েছে:
 
-## React Compiler
+- সম্পূর্ণ **Responsive UI** (মোবাইল, ট্যাব, ডেস্কটপ)
+- **Header** ও **Footer** সহ কাস্টম লেআউট
+- **Home Page:** ব্যানার, স্টেট কার্ড, টপ অ্যাপস সেকশন
+- **All Apps Page:** লাইভ সার্চ, ফিল্টার, সাজানো (sorting)
+- **App Details Page:** বিস্তারিত ইনফরমেশন, ইনস্টলেশন বাটন ও চার্ট
+- **My Installation Page:** লোকালস্টোরেজ থেকে ইনস্টলকৃত অ্যাপ ম্যানেজমেন্ট
+- **Loading Animation** ও **Toast Notifications**
+- **Custom Error Page** (Invalid route এর জন্য)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Technologies Used
 
-## Expanding the ESLint configuration
+**React** **React Router** **Tailwind CSS** **DaisyUI** **Lucide React**
+**Recharts** **Axios** **React Toastify** **React Spinners**
+**@tailwindcss/vite** **Vite**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Live link:
