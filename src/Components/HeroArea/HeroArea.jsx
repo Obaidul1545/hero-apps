@@ -23,14 +23,14 @@ const HeroArea = () => {
           <Link
             to={'https://play.google.com/store'}
             target="_blank"
-            className="btn"
+            className="btn bg-[#d1cfd35e]"
           >
             <img src={googlePlay} alt="" className="w-[25px]" /> Google Play
           </Link>
           <Link
             to={'https://www.apple.com/app-store/'}
             target="_blank"
-            className="btn"
+            className="btn bg-[#d1cfd35e]"
           >
             <img src={appPlay} alt="" className="w-[25px]" /> App Store
           </Link>
