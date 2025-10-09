@@ -7,7 +7,9 @@ const InstallAppCard = ({ appsData, handleUninstall }) => {
       <div className="flex items-center gap-6">
         <img src={image} alt="" className="w-20 rounded-md" />
         <div className="space-y-3">
-          <h3 className="text-xl font-semibold text-[#001931]">{title}</h3>
+          <h3 className="text-base md:text-xl font-semibold text-[#001931]">
+            {title}
+          </h3>
           <div className="flex items-center gap-3">
             <span className="text-[#00D390] inline-flex items-center gap-1">
               <Download size={20} /> {downloads}
@@ -21,7 +23,7 @@ const InstallAppCard = ({ appsData, handleUninstall }) => {
       </div>
       <button
         onClick={() => handleUninstall(id)}
-        className="btn text-white bg-[#00D390]"
+        className="btn btn-sm md:btn-md text-white bg-[#00D390]"
       >
         Uninstall
       </button>

@@ -29,7 +29,7 @@ const Apps = () => {
   return (
     <div>
       <div className="text-center space-y-2 my-10 max-w-7xl mx-auto">
-        <h1 className="text-5xl font-bold text-[#001931]">
+        <h1 className="text-3xl md:text-5xl font-bold text-[#001931]">
           Our All Applications
         </h1>
         <p className="text-[#627382]">

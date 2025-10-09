@@ -6,7 +6,7 @@ import AppListSkeletonLoader from '../../Components/AppListSkeletonLoader/AppLis
 import HeroArea from '../../Components/HeroArea/HeroArea';
 
 const Home = () => {
-  const { appData, loading, } = useAppsData();
+  const { appData, loading } = useAppsData();
 
   const trendingApps = appData.slice(0, 8);
   return (
@@ -17,7 +17,9 @@ const Home = () => {
       {/* Trending Apps  */}
       <section className="my-20 max-w-7xl mx-auto">
         <div className="text-center space-y-2">
-          <h1 className="text-5xl font-bold text-[#001931]">Trending Apps</h1>
+          <h1 className="text-3xl md:text-5xl font-bold text-[#001931]">
+            Trending Apps
+          </h1>
           <p className="text-[#627382]">
             Explore All Trending Apps on the Market developed by us
           </p>
