@@ -6,7 +6,7 @@ import AppListSkeletonLoader from '../../Components/AppListSkeletonLoader/AppLis
 import HeroArea from '../../Components/HeroArea/HeroArea';
 
 const Home = () => {
-  const { appData, loading, error } = useAppsData();
+  const { appData, loading, } = useAppsData();
 
   const trendingApps = appData.slice(0, 8);
   return (

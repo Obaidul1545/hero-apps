@@ -28,10 +28,8 @@ const addToStoreDB = (id) => {
 
 // delete localStorage
 const removeToStoredDB = (id) => {
-  console.log(id);
   const storeApps = getStoredApp().map((a) => parseInt(a));
   const updateStoreApps = storeApps.filter((apps) => apps !== id);
-  console.log(updateStoreApps);
   localStorage.setItem('installedApps', JSON.stringify(updateStoreApps));
 };
 
