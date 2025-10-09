@@ -1,27 +1,31 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import useAppsData from '../../Hooks/useAppsData';
 import { getStoredApp } from '../../utility/addToDB';
-
-import img from '../../assets/demo-1.webp';
-import { Download, Star } from 'lucide-react';
+import InstallAppCard from '../../Components/InstallAppCard/InstallAppCard';
 
 const Installation = () => {
-  const [installedApp, setInstalledApp] = useState([]);
   const { appData } = useAppsData();
-  // console.log(appData);
+  const [installedApp, setInstalledApp] = useState([]);
+  const [sort, setSort] = useState('');
 
   useEffect(() => {
     const storedAppData = getStoredApp();
-    console.log(storedAppData);
     const convertStoredApp = storedAppData.map((id) => parseInt(id));
-    console.log(convertStoredApp);
     const myInstalledApps = appData.filter((app) =>
       convertStoredApp.includes(app.id)
     );
-    console.log(myInstalledApps);
-
     setInstalledApp(myInstalledApps);
-  }, []);
+  }, [appData]);
+
+  const handleSort = (type) => {
+    setSort(type);
+    if (type === 'low-high') {
+      const sortedByLowHigh = [...installedApp].sort((a, b) => a.size - b.size);
+      setInstalledApp(sortedByLowHigh);
+    }
+    // if (type === 'high-low') {
+    // }
+  };
 
   return (
     <div className="max-w-7xl mx-auto">
@@ -47,10 +51,10 @@ const Installation = () => {
                 className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm"
               >
                 <li>
-                  <a>Low-High</a>
+                  <a onClick={() => handleSort('low-high')}>Low-High</a>
                 </li>
                 <li>
-                  <a>High-Low</a>
+                  <a onClick={() => handleSort('high-low')}>High-Low</a>
                 </li>
               </ul>
             </div>
@@ -58,25 +62,13 @@ const Installation = () => {
         </div>
 
         {/* installed card  */}
-        <div className="flex items-center justify-between bg-white p-4 rounded-md shadow-md">
-          <div className="flex items-center gap-6">
-            <img src={img} alt="" className="w-20 rounded-md" />
-            <div className="space-y-3">
-              <h3 className="text-xl font-semibold text-[#001931]">
-                Lorem ipsum dolor sit amet.
-              </h3>
-              <div className="flex items-center gap-3">
-                <span className="text-[#00D390] inline-flex items-center gap-1">
-                  <Download size={20} /> 9M
-                </span>
-                <span className="text-[#FF8811] inline-flex items-center gap-1">
-                  <Star size={20} /> 5
-                </span>
-                <span className="text-[#627382]">250MB</span>
-              </div>
-            </div>
-          </div>
-          <button className="btn text-white bg-[#00D390]">Uninstall</button>
+        <div className="space-y-5">
+          {installedApp.map((appsData) => (
+            <InstallAppCard
+              key={appsData.id}
+              appsData={appsData}
+            ></InstallAppCard>
+          ))}
         </div>
       </section>
     </div>

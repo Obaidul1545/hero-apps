@@ -1,4 +1,3 @@
-import imag from '../../assets/demo-1.webp';
 import { Download, Star } from 'lucide-react';
 import { Link } from 'react-router';
 

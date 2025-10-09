@@ -10,8 +10,6 @@ import {
   XAxis,
   YAxis,
   Tooltip,
-  Legend,
-  CartesianGrid,
   ResponsiveContainer,
 } from 'recharts';
 import { addToStoreDB } from '../../utility/addToDB';
@@ -39,7 +37,7 @@ const AppDetails = () => {
       <div className="flex flex-col md:flex-row gap-10 items-center px-2 md:px-0">
         <div className="flex-shrink-0">
           <img
-            src={img}
+            src={image}
             alt=""
             className="h-75 w-75 object-contain shadow-xl mx-auto"
           />
