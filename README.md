@@ -21,8 +21,15 @@
 
 ## Technologies Used
 
-**React** **React Router** **Tailwind CSS** **DaisyUI** **Lucide React**
-**Recharts** **Axios** **React Toastify** **React Spinners**
-**@tailwindcss/vite** **Vite**
+- **React**
+- **React-Router**
+- **Tailwind CSS**
+- **DaisyUI**
+- **Lucide React**
+- **Recharts**
+- **Axios**
+- **React Toastify**
+- **React Spinners**
+- **Vite**
 
 ## Live link:
