@@ -33,3 +33,12 @@
 - **Vite**
 
 ## Live link: https://get-hero-apps.netlify.app/
+
+## Running Locally
+
+Follow these steps to run the project on your local machine:
+
+```bash
+git clone https://github.com/Obaidul1545/hero-apps
+npm install
+npm run dev
